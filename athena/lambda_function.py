@@ -3,10 +3,10 @@ import time
 
 CLIENT = boto3.client("athena")
 
-DATABASE_NAME = "athena_tutorial"
-RESULT_OUTPUT_LOCATION = "s3://learnaws-athena-tutorial/queries/"
+DATABASE_NAME = "db1"
+RESULT_OUTPUT_LOCATION = "s3://somesh123456/queries/"
 TABLE_DDL = "funding_data.ddl"
-TABLE_NAME = "funding_data"
+TABLE_NAME = "table1"
 
 
 def has_query_succeeded(execution_id):
