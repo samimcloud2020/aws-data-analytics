@@ -68,7 +68,8 @@ def get_query_results(execution_id):
     return results
 
 
-def main():
+#def main():
+def lambda_handler(event,context):
     # 1. Create Database
     execution_id = create_database()
     print(f"Checking query execution for: {execution_id}")
