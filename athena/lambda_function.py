@@ -97,5 +97,12 @@ def lambda_handler(event,context):
     print(get_query_results(execution_id=execution_id))
 
 
+# Python program to execute
+# main directly
+print ("Always executed")
+ 
 if __name__ == "__main__":
-    main()
+    print ("Executed when invoked directly")
+else:
+    print ("Executed when imported")
+
