@@ -1,0 +1,7 @@
+root@SDOP_Ts:~/rrr# zip athena.zip lambda_function.py funding_data.ddl
+  adding: lambda_function.py (deflated 69%)
+  adding: funding_data.ddl (deflated 37%)
+root@SDOP_Ts:~/rrr# ls
+athena.zip  funding_data.ddl  lambda_function.py
+root@SDOP_Ts:~/rrr# aws s3 cp athena.zip s3://somesh123456/athena.zip
+upload: ./athena.zip to s3://somesh123456/athena.zip
